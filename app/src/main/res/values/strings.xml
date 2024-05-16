@@ -37,6 +37,10 @@
     <string name="calc_wrong_expression">Wrong Expression</string>
     <!-- endregion-->
     <!-- region Game Activity-->
-
+    <string name="game_name">GAME</string>
+    <string name="snake_eaten">Food eaten: </string>
+    <string name="snake_speed">Speed: </string>
     <!-- endregion-->
+
+
 </resources>
