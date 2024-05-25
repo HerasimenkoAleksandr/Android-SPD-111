@@ -16,6 +16,7 @@
     <color name="calc_equal_bg">#03A9F4</color>
     <color name="game_field">#FF88FF88</color>
     <color name="game_snake">#FF118811</color>
-    calc_result_bg_land
+
     <color name="calc_result_bg_land">#FF118811</color>
+    <color name="chat_they_mes">#FF88FF88</color>
 </resources>
