@@ -1,5 +1,7 @@
 package step.learning.android_spd_111.orm;
 
+import android.view.View;
+
 import org.json.JSONObject;
 
 import java.text.SimpleDateFormat;
@@ -11,6 +13,16 @@ public class ChatMessage {
     private String author;
     private String text;
     private Date moment;
+
+    private View view;
+
+    public View getView() {
+        return view;
+    }
+
+    public void setView(View view) {
+        this.view = view;
+    }
 
     private static final SimpleDateFormat apiDateFormat = new SimpleDateFormat(
             "yyyy-MM-dd HH:mm:ss",

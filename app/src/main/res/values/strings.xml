@@ -44,4 +44,5 @@
 
     <string name="main_btn_chat">Мережа. Чат</string>
     <string name="chat_scroller_description">Chat messages</string>
+    <string name="chat_sound">Звук повідомлень</string>
 </resources>
