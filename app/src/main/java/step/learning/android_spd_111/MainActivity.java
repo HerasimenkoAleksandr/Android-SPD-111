@@ -3,6 +3,8 @@ package step.learning.android_spd_111;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,7 +13,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
-
+    private Animation size2Animation;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,18 +27,33 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.main_btn_calc).setOnClickListener(this::onCalcButtonClick);
         findViewById(R.id.main_btn_game).setOnClickListener(this::onGameButtonClick);
         findViewById(R.id.main_btn_chat).setOnClickListener(this::onChatButtonClick);
-    }
+        findViewById(R.id.main_btn_anim).setOnClickListener(this::onAnimButtonClick);
 
+        size2Animation= AnimationUtils.loadAnimation(this, R.anim.size2);
+
+    }
+    private void size2Clic(View view)
+    {
+        view.startAnimation(size2Animation);
+    }
     private void onCalcButtonClick(View view){
+        view.startAnimation(size2Animation);
         Intent intent = new Intent(this, CalcActivity.class);
         startActivity(intent);
     }
     private void onGameButtonClick(View view){
+        view.startAnimation(size2Animation);
         Intent intent = new Intent(this, GameActivity.class);
         startActivity(intent);
     }
     private void onChatButtonClick(View view) {
+        view.startAnimation(size2Animation);
         Intent intent = new Intent(this, ChatActivity.class);
+        startActivity(intent);
+    }
+    private void onAnimButtonClick(View view) {
+        view.startAnimation(size2Animation);
+        Intent intent = new Intent(this, AnimActivity.class);
         startActivity(intent);
     }
 }

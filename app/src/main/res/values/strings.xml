@@ -45,4 +45,13 @@
     <string name="main_btn_chat">Мережа. Чат</string>
     <string name="chat_scroller_description">Chat messages</string>
     <string name="chat_sound">Звук повідомлень</string>
+    <string name="anim_title">Анімації</string>
+    <string name="anim_opacity_title">прозорість</string>
+    <string name="anim_size_title">Розмір</string>
+
+    <string name="anim_arc_title">Обертання</string>
+    <string name="anim_move_title">Переміщення</string>
+    <string name="main_btn_anim">Анімація</string>
+    <string name="main_combo_anim">комбінація</string>
+
 </resources>

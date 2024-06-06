@@ -29,7 +29,7 @@ android {
 }
 
 dependencies {
-
+    implementation ("com.google.android.flexbox:flexbox:3.0.0")
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
